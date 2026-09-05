@@ -1,0 +1,29 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>For My Baby Prachi ❤️</title><style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial;color:white;background:radial-gradient(circle at 20% 10%,#82285f,#29123b 40%,#090611);min-height:100vh}section{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:22px}.box{max-width:760px;width:100%;text-align:center;padding:30px 22px;border-radius:30px;background:#ffffff10;border:1px solid #ffffff25;backdrop-filter:blur(14px);box-shadow:0 20px 70px #0008}h1{font-size:clamp(45px,12vw,82px);margin:15px 0;background:linear-gradient(90deg,#ffd1eb,#fff,#ff9dcb);-webkit-background-clip:text;color:transparent}h2{font-size:clamp(28px,7vw,45px)}p{line-height:1.8;color:#f7eaf4}.hidden{display:none}.card{text-align:left;padding:18px;margin:14px 0;border-radius:20px;background:#ffffff0b;border:1px solid #ffffff18}.card h3{color:#ffd1e9}button{border:0;border-radius:16px;padding:15px 21px;margin:8px;color:white;font-weight:bold;font-size:16px;background:linear-gradient(135deg,#d34c9b,#8d43d8);box-shadow:0 10px 25px #0005}.rose,.ring{font-size:80px}.ring{animation:b 1.6s infinite}@keyframes b{50%{transform:translateY(-12px) rotate(7deg)}}.letter{white-space:pre-line;text-align:left;line-height:2;font-size:17px}.tiny{opacity:.6;font-size:13px}.heart{position:fixed;bottom:-30px;font-size:24px;animation:u 6s linear forwards;z-index:5}@keyframes u{to{transform:translateY(-110vh) rotate(360deg);opacity:0}}
+</style></head><body>
+<section id="start"><div class="box"><div>For someone very special ❤️</div><h1>Prachi</h1><p id="intro"></p><button onclick="go('story')">Start My Surprise ✨</button></div></section>
+<section id="story" class="hidden"><div class="box"><div class="rose">🌹</div><h2>Hey Baby ❤️</h2><p>Some things are difficult to say when you're standing in front of the person you feel them for.</p><p>So I decided to put my heart into a little website instead. 🥹</p><button onclick="go('why')">Keep going →</button></div></section>
+<section id="why" class="hidden"><div class="box"><h2>Why You? 💕</h2><div class="card"><h3>😊 Your Smile</h3><p>Your smile can make an ordinary moment feel special.</p></div><div class="card"><h3>🫶 The Way You Are</h3><p>I don't need you to be perfect. I like you exactly as you are.</p></div><div class="card"><h3>✨ The Little Things</h3><p>The tiny things about you slowly became the big things in my heart.</p></div><div class="card"><h3>❤️ The Truth</h3><p>Somewhere along the way, you became someone I don't want to lose.</p></div><button onclick="go('letter')">I have something to tell you 💌</button></div></section>
+<section id="letter" class="hidden"><div class="box"><h2>💌 A Letter For My Baby</h2><div class="letter">Prachi,
+
+I don't know exactly when it happened.
+
+Maybe it was one conversation. Maybe it was one smile. Maybe it was all the small moments I didn't realize were becoming memories.
+
+But somewhere along the way, you became special to me.
+
+I love the way you make me smile. I love the comfort I feel when I'm talking to you. And most of all, I love that being around you makes me want to become a better version of myself.
+
+I don't want to promise a perfect future. I just know that if I get the chance, I want to make more memories with you, make you smile more, stand beside you on difficult days, and celebrate beautiful days with you.
+
+Baby, this is the one thing I wanted to say from my heart:
+
+You are not just someone I like.
+You are someone I want to choose. ❤️
+
+— Sanket</div><button onclick="go('secret')">There's one more thing... 🔐</button></div></section>
+<section id="secret" class="hidden"><div class="box"><div style="font-size:65px">💗</div><h2>One Last Question...</h2><p>Take a breath, Baby.</p><p>I have been trying to find the perfect words...</p><p><b>But maybe the simplest words are the most honest ones.</b></p><button onclick="go('proposal')">Open it 💍</button></div></section>
+<section id="proposal" class="hidden"><div class="box"><div class="ring">💍</div><p>Prachi...</p><h1>Will You Be Mine? ❤️</h1><p>Baby, I don't want you to just be a part of my story.<br><b>I want you to be my favourite chapter.</b></p><button onclick="yes()">❤️ YES, SANKET</button><button onclick="go('time')">🥺 I NEED SOME TIME</button><p class="tiny">Whatever your answer, take it honestly. ❤️</p></div></section>
+<section id="answer" class="hidden"><div class="box"><div style="font-size:70px">🎉💖🥹</div><h1>YOU SAID YES!</h1><h2>My Baby ❤️</h2><p>Prachi, you just made Sanket the happiest person. 🥹</p><p><b>Let's make our own little story — one smile, one memory, and one beautiful moment at a time.</b></p><p style="font-size:24px">I choose you. ❤️</p></div></section>
+<section id="time" class="hidden"><div class="box"><div style="font-size:70px">🫶</div><h2>That's completely okay, Baby.</h2><p>I don't want an answer because you felt pressured.</p><p>Take your time. Think about it. Whenever you're ready, I'll be here.</p><p><b>My feelings are real, and your answer deserves to be real too. ❤️</b></p><button onclick="go('proposal')">← Back</button></div></section>
+<script>let t="There is something I have wanted to tell you for a while... ❤️",i=0;function type(){if(i<t.length){intro.textContent+=t[i++];setTimeout(type,45)}}type();function go(x){document.querySelectorAll('section').forEach(s=>s.classList.add('hidden'));document.getElementById(x).classList.remove('hidden');scrollTo(0,0)}function yes(){go('answer');for(let i=0;i<40;i++){let h=document.createElement('span');h.className='heart';h.textContent=['❤️','💖','💕','✨','🌹','🎉'][Math.floor(Math.random()*6)];h.style.left=Math.random()*100+'vw';h.style.animationDelay=Math.random()*1.5+'s';document.body.appendChild(h);setTimeout(()=>h.remove(),6500)}}</script></body></html>
